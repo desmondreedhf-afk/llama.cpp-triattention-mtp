@@ -1,0 +1,45 @@
+name: Bug report
+description: Report a build, runtime, or compatibility problem
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What happened?
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include OS, CPU/GPU, compiler, CMake version, and relevant build flags.
+      placeholder: |
+        OS:
+        CPU/GPU:
+        Compiler:
+        CMake:
+        Build flags:
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Commands or steps needed to reproduce the issue.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or output
+      render: shell
+    validations:
+      required: false
