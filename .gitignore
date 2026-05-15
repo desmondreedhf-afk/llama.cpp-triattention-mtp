@@ -1,0 +1,62 @@
+# Build outputs
+build/
+cmake-build-*/
+out/
+dist/
+bin/
+obj/
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+*.exe
+*.pdb
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+compile_commands.json
+CTestTestfile.cmake
+Testing/
+
+# Python helpers
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+
+# Editors and OS files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+.cache/
+
+# Models, weights, and generated artifacts
+models/
+*.gguf
+*.ggml
+*.bin
+*.safetensors
+*.pt
+*.pth
+*.onnx
+
+# Benchmark output
+benchmarks/results/
+results/
+profiles/
+traces/
